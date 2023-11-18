@@ -1,5 +1,6 @@
-from .summarize_fare_rules import SummarizeFareRulesUseCase
+from flight_assistant.use_cases.booking_products import (
+    ListBookingProductUseCase,
+    SummarizeFareRulesUseCase,
+)
 
-__all__ = [
-    "SummarizeFareRulesUseCase",
-]
+__all__ = ["SummarizeFareRulesUseCase", "ListBookingProductUseCase"]

@@ -1,6 +1,9 @@
-from .booking_product import BookingProductRepository, PostgresFareRuleClient
+from flight_assistant.engine.repositories.booking_product import (
+    BookingProductRepository,
+    SQLAlchemyBookingProductRepository,
+)
 
 __all__ = [
     "BookingProductRepository",
-    "PostgresFareRuleClient",
+    "SQLAlchemyBookingProductRepository",
 ]

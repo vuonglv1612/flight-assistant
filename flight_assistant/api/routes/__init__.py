@@ -1,1 +1,1 @@
-from .fare_rules import router as fare_rules_router
+from .booking_products import router as fare_rules_router

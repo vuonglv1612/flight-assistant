@@ -1,9 +1,13 @@
-from flight_assistant.engine import BookingProductRepository, PostgresFareRuleClient
+from flight_assistant.engine import (
+    BookingProductRepository,
+    SQLAlchemyBookingProductRepository,
+)
+
 from .summarizer import FareRuleSummarizer, OpenAISummarizer
 
 __all__ = [
     "BookingProductRepository",
-    "PostgresFareRuleClient",
+    "SQLAlchemyBookingProductRepository",
     "FareRuleSummarizer",
     "OpenAISummarizer",
 ]
