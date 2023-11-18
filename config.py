@@ -16,9 +16,9 @@ OPENAI_SUMMARIZE_PROMPT = (
     "conclusion, start with the main point"
 )
 OPENAI_SUMMARIZE_SETTINGS = {
-    "model": "gpt-3.5-turbo",
-    "temperature": 0.2,
-    "max_tokens": 512,
+    "model": env.str("OPENAI_SUMMARIZE_MODEL", "gpt-3.5-turbo-1106"),
+    "temperature": env.float("OPENAI_SUMMARIZE_TEMPERATURE", 0.2),
+    "max_tokens": env.int("OPENAI_SUMMARIZE_MAX_TOKENS", 512),
     "top_p": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,

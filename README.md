@@ -25,6 +25,9 @@ export API_HOST=localhost
 export API_PORT=8000
 export ENGINE_POSTGRES_URI=postgresql://flight:psql@localhost:5432/engine
 export OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+export OPENAI_SUMMARIZE_MODEL=gpt-3.5-turbo-1106
+export OPENAI_SUMMARIZE_TEMPERATURE=0.2
+export OPENAI_SUMMARIZE_MAX_TOKENS=512
 ```
 
 ## Run
