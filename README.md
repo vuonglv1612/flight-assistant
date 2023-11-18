@@ -32,19 +32,19 @@ export OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ### Migration
 
 ```bash
-./venv/bin/python main.py migrate
+./.venv/bin/python main.py migrate
 ```
 
 ### Seeding sample data
 
 ```bash
-./venv/bin/python main.py seeding
+./.venv/bin/python main.py seeding
 ```
 
 ### Run API
 
 ```bash
-./venv/bin/python main.py api
+./.venv/bin/python main.py api
 ```
 
 ## Usage
