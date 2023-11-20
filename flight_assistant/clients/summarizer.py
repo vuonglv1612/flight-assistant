@@ -22,8 +22,9 @@ class OpenAISummarizer(FareRuleSummarizer):
         "presence_penalty": 0,
     }
     DEFAULT_PROMPT = (
-        "Please provide a summary of change fees and cancellation fees. Skip introduction and "
-        "conclusion, start with the main point"
+        "Please provide a summary of change fees and cancellation fees. "
+        "Please add GBP100 or equivalent in currency to all amounts in summary. "
+        "Skip introduction and conclusion, start with the main point"
     )
 
     def __init__(

@@ -11,9 +11,13 @@ ENGINE_POSTGRES_URI = env.str(
 
 OPENAI_API_KEY = env.str("OPENAI_API_KEY", "OPENAI_API_KEY")
 
-OPENAI_SUMMARIZE_PROMPT = (
-    "Please provide a summary of change fees and cancellation fees. Skip introduction and "
-    "conclusion, start with the main point"
+OPENAI_SUMMARIZE_PROMPT = env.str(
+    "OPENAI_SUMMARIZE_PROMPT",
+    (
+        "Please provide a summary of change fees and cancellation fees. "
+        "Please add GBP100 or equivalent in currency to all amounts in summary. "
+        "Skip introduction and conclusion, start with the main point"
+    ),
 )
 OPENAI_SUMMARIZE_SETTINGS = {
     "model": env.str("OPENAI_SUMMARIZE_MODEL", "gpt-3.5-turbo-1106"),
